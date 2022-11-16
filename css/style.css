@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    text-decoration: none;
+    padding: 0;
+}
+.body{
+    margin: 0;
+    padding: 0;
+    font-family: 'open Sabs' sans-serif;
+}
+
+/* navigasi */
+.logo a{
+    font-size: 40px;
+    font-weight: bold;
+    float: left;
+    padding-left: 50px;
+    font-family: courier;
+    color:whitesmoke;
+}
+
+.menu{
+    float:right;
+}
+
+nav{
+    width: 100%;
+    margin: auto;
+    display: inline-block;
+    line-height: 80px;
+    position: sticky;
+    top:0;
+    position: -webkit-sticky;
+    background: rgb(0, 0, 0);
+    z-index: 2;
+    border-bottom: 2px solid #000000;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding-right: 40px;
+    overflow: hidden;
+}
+
+nav ul li{
+    float: left;
+}
+
+nav ul li a{
+    color: whitesmoke;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 20px 15px 20px;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    background-color: crimson;
+    color: white;
+    border-radius: 20px;
+}
+
+
+/* home */
+.banner{
+    height: 100vh;
+    background-size:cover;
+    background-image: url("../img/baner.png");
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(44, 44, 44, 0.74);
+}
+.banner h2{
+    color: whitesmoke;
+    z-index: 1;
+    padding: 15px 35px;
+    border: 2px solid whitesmoke;
+    display: flex;
+}
+
+/* about */
+.tentang{
+    display: block;
+    margin-top: 5%;
+    padding-top: 90px;
+}
+.tentang h2{
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 30px;
+    color:#000000;
+    text-align: center;
+}
+.keterangan{
+    padding-top: 50px;
+    display: flex ;
+}
+
+.keterangan img{
+    width: 20%;
+    border-radius: 50%;
+    margin-left: 80px;
+}
+.keterangan p{
+    padding: 50px 0px 20px 40px;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+/* Experiences */
+.pengalaman{
+    display: block;
+    margin-top: 5%;
+    padding-top: 90px;
+}
+.pengalaman h2{
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 25px ;
+    color:#000000;
+    text-align: center;
+}
+.penyatuborder{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding-top: 100px;
+}
+.strukturpengalaman{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pengalaman .strukturpengalaman img{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.pengalaman .strukturpengalaman h3{
+    text-align: center;
+    font-size: 25px;
+    position: relative;
+    padding-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pengalaman .strukturpengalaman p{
+    text-align: center;
+    font-size: 20px;
+    line-height: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+}
+
+/* Education */
+.pendidikan{
+    display: block;
+    margin-top: 5%;
+    padding-top: 90px;
+}
+.pendidikan h2{
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 30px;
+    color:#000000;
+    text-align: center;
+}
+.facontainer{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.facontainer.container{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container h3{
+    font-size: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+}
+.container p{
+    font-weight: 40;
+    font-size: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Skills */
+.keahlian{
+    display: block;
+    margin: 5%;
+    padding-top: 90px;
+}
+.keahlian h2{
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 30px;
+    color:#000000;
+    text-align: center;
+}
+.box{
+    color:#000000;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15%;
+}
+.box:after{
+    content:'';
+    clear: both;
+}
+.icon{
+    width: 150px;
+    height:150px;
+    border:1px solid;
+    border-radius:50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.icon img{
+    padding-top: 35px;
+    width: 80px;
+    height: 80px;
+}
+.box h4{
+    padding-top: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+}
+
+/* Interests */
+.wrapper{
+    background-color: #000000;
+}
+.kesukaan{
+    display: block;
+    margin: 5%;
+    padding-top: 70px;
+}
+.kesukaan h2{
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 30px;
+    color: whitesmoke;
+    text-align: center;
+}
+.gambarhobi{
+    padding-top: 70px;
+    display: flex;
+}
+.gambarhobi img{
+    width: 600px;
+    padding-bottom: 150px;
+}
+.gambarhobi .penjelasan{
+    padding-left: 20px;
+}
+.gambarhobi .penjelasan h5{
+    font-size: 25px;
+    color: whitesmoke ;
+}
+.gambarhobi .penjelasan p{
+    font-size: 20px;
+    color: whitesmoke ;
+}
+.gambarhobi .penjelasan2 h5{
+    font-size: 25px;
+    color: whitesmoke ;
+}
+.gambarhobi .penjelasan2 p{
+    font-size: 20px;
+    padding-right: 20px;
+    color: whitesmoke ;
+}
+
+/* Award */
+.penghargaan{
+    display: block;
+    padding-top: 70px;
+}
+
+.penghargaan h2{
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+.pencapaian{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pencapaian img{
+    display: flex;
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pencapaian h4{
+    display: block;
+    padding-top: 50px ;
+    text-align: center;
+    margin-bottom: 10%;
+}
+/* footer */
+.footer {
+    padding: 20px 0;
+    background-color: rgb(17, 17, 17);
+    color:white;
+    text-align:center;
+}
