@@ -233,7 +233,7 @@ nav ul li a:hover{
 .icon{
     width: 150px;
     height:150px;
-    border:1px solid;
+    border:2px solid;
     border-radius:50%;
     text-align: center;
     margin-left: auto;
@@ -281,7 +281,7 @@ nav ul li a:hover{
 }
 .gambarhobi .penjelasan h5{
     font-size: 25px;
-    color: whitesmoke ;
+    color: white ;
 }
 .gambarhobi .penjelasan p{
     font-size: 20px;
@@ -289,7 +289,7 @@ nav ul li a:hover{
 }
 .gambarhobi .penjelasan2 h5{
     font-size: 25px;
-    color: whitesmoke ;
+    color: white ;
 }
 .gambarhobi .penjelasan2 p{
     font-size: 20px;
@@ -333,4 +333,96 @@ nav ul li a:hover{
     background-color: rgb(17, 17, 17);
     color:white;
     text-align:center;
+}
+
+/* tombol menu responsive */
+.tombol-menu {
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 27px;
+    height: 20px;
+}
+
+.tombol-menu .garis {
+    height: 3px;
+    background-color: whitesmoke;
+}
+
+@media screen and (max-width: 858px) {
+    .logo a {
+        display: inline;
+        font-size: 30px;
+        padding-left: 15px;
+    }
+    .tombol-menu {
+        display: flex;
+    }
+    nav{
+        line-height: 65px;
+    }
+    nav .menu {
+        display: none;
+    }
+    nav .menu.active {
+        display: flex;
+    }
+    nav ul{
+        padding: 0;
+    }
+    nav ul li {
+        width:100%;
+        text-align: center;
+        border-bottom:1px solid #333333;
+    }
+
+    .banner h2{
+        font-size: 20px;
+    }
+    .keterangan{
+        display: block;
+    }
+    .keterangan img{
+        display: flex;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .keterangan p{
+        text-align: center;
+        padding: 30px 10px 10px 10px;
+    }
+    .facontainer .container{
+        padding-left: 15px;
+    }
+    .icon{
+        width: 100px;
+        height: 100px;
+    }
+    .icon img{
+        padding-top: 22px;
+        width: 60px;
+        height: 60px;
+    }
+    .gambarhobi img{
+        width: 250px;
+    }
+    .gambarhobi .penjelasan h5{
+        font-size: 23px;
+    }
+    .gambarhobi .penjelasan p{
+        font-size: 15px;
+    }
+    .gambarhobi .penjelasan2 h5{
+        font-size: 23px;
+    }
+    .gambarhobi .penjelasan2 p{
+        font-size: 15px;
+    }
+    .pencapaian img{
+        width: 100%;
+    }
 }
