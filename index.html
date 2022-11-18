@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="JS/javascript.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="javascript/javascript.js" defer></script>
 </head>
 <body>
     <nav>
@@ -35,38 +37,57 @@
         </section>
 
         <!-- about -->
+        <div class="wrapper">
         <div id="about" class="tentang">
             <h2>About</h2>
             <div class="keterangan">
                 <img src="img/fotodiri.jpg" alt="fotodiri">
-                <p>Mikhael Edward Silaen adalah seorang Front-End Developer yang memanfaatkan website pribadinya <br>
-                sebagai resume dan portofolio dengan cara yang kreatif. Mikhael juga adalah anak muda yang <br> 
-                memiliki motivasi tinggi untuk menggeluti bidang yang di sukai yaitu IT. Pengunjung websitenya <br>
-                bisa melihat resume dan portofolio Mikhael melalui simpel websitenya. Selain aspek estetikanya, <br>
-                mikhael juga mementingkan kepuasan pengguna yang harus diperhatikan. Informasi yang ditampilkan <br>
+                <div class="pengenalandiri">
+                <h3>Hello I’m Mikhael Edward</h3>
+                <p>Mikhael Edward Silaen adalah seorang Front-End Developer yang memanfaatkan website pribadinya 
+                sebagai resume dan portofolio dengan cara yang kreatif. Mikhael juga adalah anak muda yang 
+                memiliki motivasi tinggi untuk menggeluti bidang yang di sukai yaitu IT. <br> <br> Pengunjung websitenya 
+                bisa melihat resume dan portofolio Mikhael melalui simpel websitenya. Selain aspek estetikanya, 
+                mikhael juga mementingkan kepuasan pengguna yang harus diperhatikan. Informasi yang ditampilkan 
                 di beranda informatif dan ringkas. Halaman-halaman tentang karyanya, di sisi lain, secara menarik.</p>
             </div>
+             </div>
         </div>
 
         <!-- Experiences -->
         <div id="experiences" class="pengalaman">
             <h2>Experiences</h2>
-            <div class="penyatuborder">
-            <div class="strukturpengalaman">
-                <img src="img/pengalaman1.png" alt="shopee">
-                <h3>PT. SHOPEE</h3>
-                <p>Freelance Warehouse</p>
-                <p>Oktober 2021 - Juli 2022</p>
-            </div>
-            <div class="strukturpengalaman">
-                <img src="img/pengalaman2.png" alt="plano">
-                <h3>PT. PLANO IDETAMA GEMILANG</h3>
-                <p>Freelance Admin Event</p>
-                <p>Agustus 2022 - Sekarang</p>
-            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card">
+                    <img src="img/pengalaman.jpg" class="card-img-top" alt="JBA">
+                    <div class="card-body">
+                      <h5 class="card-title">PT. JBA INDONESIA</h5>
+                      <p class="card-text">Praktek Kerja Lapangan (PKL) <br> <br> Januari 2020 - Maret 2020</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="img/pengalaman1.png" class="card-img-top" alt="SHOPEE">
+                    <div class="card-body">
+                      <h5 class="card-title">PT. SHOPEE</h5>
+                      <p class="card-text">Freelance Warehouse <br> <br> Oktober 2021 - Juli 2022</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="img/pengalaman2.png" class="card-img-top" alt="PLANO">
+                    <div class="card-body">
+                      <h5 class="card-title">PT. PLANO</h5>
+                      <p class="card-text">Freelance Admin Event <br> <br> Agustus 2022 - Sekarang</p>
+                    </div>
+                  </div>
+                </div>
             </div>
         </div>
-
+        </div>
         <!-- Education -->
         <div id="education" class="pendidikan">
             <h2>Education</h2>
