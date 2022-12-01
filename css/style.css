@@ -181,7 +181,7 @@ col{
     color:#000000;
     text-align: center;
 }
-.penyatuborder{
+.pendidikan .penyatuborder{
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -234,6 +234,13 @@ col{
     margin-right: auto;
     margin-bottom: 15%;
 }
+.keahlian .penyatuskills{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding-top: 100px;
+}
 .box:after{
     content:'';
     clear: both;
@@ -281,7 +288,8 @@ col{
     display: flex;
 }
 .gambarhobi img{
-    width: 600px;
+    width: 50%;
+    height: auto;
     padding-bottom: 150px;
 }
 .gambarhobi .penjelasan{
@@ -360,7 +368,109 @@ col{
     background-color: whitesmoke;
 }
 
-@media (max-width: 768px) {
+/* Responsive handphone */
+@media (max-width: 575.98px) {
+    .logo a {
+        display: inline;
+        font-size: 30px;
+        padding-left: 15px;
+    }
+    .tombol-menu {
+        display: flex;
+    }
+    nav{
+        line-height: 65px;
+    }
+    nav .menu {
+        display: none;
+    }
+    nav .menu.active {
+        display: flex;
+    }
+    nav ul{
+        padding: 0;
+    }
+    nav ul li {
+        width:100%;
+        text-align: center;
+        border-bottom:1px solid #333333;
+    }
+    .facontainer .container h3{
+        font-size: 16px;
+    }
+    .facontainer .container p{
+        font-size: 12px;
+    }
+    .banner h2{
+        font-size: 20px;
+    }
+    .keterangan{
+        display: block;
+    }
+    .keterangan img{
+        display: flex;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .pengenalandiri{
+        padding: 20px 20px 20px 20px;
+    }
+    .keterangan h3{
+        font-size: 20px;
+        text-align: center;
+    }
+    .keterangan p{
+        text-align: center;
+        padding: 0;
+        font-size: 15px;
+    }
+    .facontainer .container{
+        padding-left: 15px;
+    }
+    .keahlian .penyatuskills{
+        display: block;
+    }
+    .icon{
+        width: 150px;
+        height: 150px;
+    }
+    .icon img{
+        padding-top: 30px;
+        width: 100px;
+        height: 120px;
+    }
+    .container h3{
+        font-size: 18px;
+    }
+    .container p{
+        font-size: 13px;
+    }
+    .gambarhobi img{
+        width: 250px;
+        height: 250px;
+    }
+    .gambarhobi .penjelasan h5{
+        font-size: 13px;
+    }
+    .gambarhobi .penjelasan p{
+        font-size: 10px;
+    }
+    .gambarhobi .penjelasan2 h5{
+        font-size: 13px;
+    }
+    .gambarhobi .penjelasan2 p{
+        font-size: 10px;
+    }
+    .pencapaian img{
+        margin-top: 2%;
+        padding-top: 70px;
+        width: 100%;
+    }
+}
+
+/* Responsive Tablet */
+@media (max-width: 991.98px) {
     .logo a {
         display: inline;
         font-size: 30px;
@@ -403,6 +513,93 @@ col{
         padding: 20px 20px 20px 20px;
     }
     .keterangan h3{
+        font-size: 20px;
+        text-align: center;
+    }
+    .keterangan p{
+        text-align: center;
+        padding: 0;
+        font-size: 15px;
+    }
+    .facontainer .container h3{
+        font-size: 25px;
+    }
+    .facontainer .container p{
+        font-size: 18px;
+    }
+    .facontainer .container{
+        padding-left: 15px;
+    }
+    .keahlian .penyatuborder{
+        display: flex;
+    }
+    .icon{
+        width: 110px;
+        height: 110px;
+        padding-top: 20px;
+    }
+    .icon img{
+        padding-top: 0px;
+        width: 70px;
+        height: 70px;
+    }
+    .container h3{
+        font-size: 20px;
+    }
+    .container p{
+        font-size: 15px;
+    }
+    .card{
+        width: 250px;
+    }
+    .gambarhobi img{
+        width: 350px;
+    }
+    .gambarhobi .penjelasan h5{
+        font-size: 25px;
+    }
+    .gambarhobi .penjelasan p{
+        font-size: 18px;
+    }
+    .gambarhobi .penjelasan2 h5{
+        font-size: 25px;
+    }
+    .gambarhobi .penjelasan2 p{
+        font-size: 18px;
+    }
+    .pencapaian img{
+        margin-top: 2%;
+        padding-top: 70px;
+        width: 100%;
+    }
+}
+
+/* Responsive Notebook */
+@media (max-width: 1199.98px) {
+    .logo a {
+        display: inline;
+        font-size: 32px;
+        padding-left: 15px;
+    }
+    nav ul{
+        padding-right: 20px;
+    }
+    .banner h2{
+        font-size: 25px;
+    }
+    .keterangan{
+        display: block;
+    }
+    .keterangan img{
+        display: flex;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .pengenalandiri{
+        padding: 20px 20px 20px 20px;
+    }
+    .keterangan h3{
         font-size: 30px;
         text-align: center;
     }
@@ -411,49 +608,55 @@ col{
         padding: 0;
         font-size: 20px;
     }
+    .facontainer .container h3{
+        font-size: 30px;
+    }
+    .facontainer .container p{
+        font-size: 25px;
+    }
     .facontainer .container{
         padding-left: 15px;
+    }
+    .keahlian .penyatuborder{
+        display: flex;
+    }
+    .icon{
+        width: 150px;
+        height: 150px;
+        padding-top: 20px;
+    }
+    .icon img{
+        padding-top: 0px;
+        width: 100px;
+        height: 100px;
+    }
+    .container h3{
+        font-size: 20px;
+    }
+    .container p{
+        font-size: 15px;
     }
     .card{
         width: 250px;
     }
-    .icon{
-        width: 130px;
-        height: 130px;
-    }
-    .icon img{
-        padding-top: 28px;
-        width: 80px;
-        height: 105px;
-    }
-    .container h3{
-        font-size: 30px;
-    }
-    .container p{
-        font-size: 23px;
-        display: flex;
-        margin-left: auto;
-        margin-right: auto ;
-    }
-
     .gambarhobi img{
-        width: 300px;
+        width: 500px;
     }
     .gambarhobi .penjelasan h5{
-        font-size: 20px;
+        font-size: 30px;
     }
     .gambarhobi .penjelasan p{
-        font-size: 13px;
-    }
-    .gambarhobi .penjelasan2 h5{
         font-size: 20px;
     }
+    .gambarhobi .penjelasan2 h5{
+        font-size: 30px;
+    }
     .gambarhobi .penjelasan2 p{
-        font-size: 13px;
+        font-size: 20px;
     }
     .pencapaian img{
         margin-top: 2%;
         padding-top: 70px;
-        width: 100%;
+        width: 50%;
     }
 }
