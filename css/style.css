@@ -93,6 +93,7 @@ nav ul li a:hover{
     padding: 15px 35px;
     border: 2px solid whitesmoke;
     display: flex;
+    font-size: 25px;
 }
 
 /* about */
@@ -369,7 +370,7 @@ col{
 }
 
 /* Responsive handphone */
-@media (max-width: 575.98px) {
+@media (min-width: 375px) and (max-width: 576px) {
     .logo a {
         display: inline;
         font-size: 30px;
@@ -402,6 +403,11 @@ col{
         font-size: 12px;
     }
     .banner h2{
+        color: whitesmoke;
+        z-index: 1;
+        padding: 13px 13px;
+        border: 2px solid whitesmoke;
+        display: flex;
         font-size: 20px;
     }
     .keterangan{
@@ -425,6 +431,9 @@ col{
         padding: 0;
         font-size: 15px;
     }
+    .card{
+        width: 250px;
+    }
     .facontainer .container{
         padding-left: 15px;
     }
@@ -441,26 +450,25 @@ col{
         height: 120px;
     }
     .container h3{
-        font-size: 18px;
+        font-size: 20px;
     }
     .container p{
-        font-size: 13px;
+        font-size: 15px;
     }
     .gambarhobi img{
-        width: 250px;
-        height: 250px;
+        width: 210px;
     }
     .gambarhobi .penjelasan h5{
-        font-size: 13px;
+        font-size: 15px;
     }
     .gambarhobi .penjelasan p{
-        font-size: 10px;
+        font-size: 11px;
     }
     .gambarhobi .penjelasan2 h5{
-        font-size: 13px;
+        font-size: 15px;
     }
     .gambarhobi .penjelasan2 p{
-        font-size: 10px;
+        font-size: 11px;
     }
     .pencapaian img{
         margin-top: 2%;
@@ -470,7 +478,7 @@ col{
 }
 
 /* Responsive Tablet */
-@media (max-width: 991.98px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
     .logo a {
         display: inline;
         font-size: 30px;
@@ -496,7 +504,6 @@ col{
         text-align: center;
         border-bottom:1px solid #333333;
     }
-
     .banner h2{
         font-size: 20px;
     }
@@ -575,7 +582,7 @@ col{
 }
 
 /* Responsive Notebook */
-@media (max-width: 1199.98px) {
+@media (min-width: 992px) and (max-width: 1199.98px) {
     .logo a {
         display: inline;
         font-size: 32px;
@@ -585,7 +592,7 @@ col{
         padding-right: 20px;
     }
     .banner h2{
-        font-size: 25px;
+        font-size: 27px;
     }
     .keterangan{
         display: block;
@@ -657,6 +664,6 @@ col{
     .pencapaian img{
         margin-top: 2%;
         padding-top: 70px;
-        width: 50%;
+        width: 70%;
     }
 }
