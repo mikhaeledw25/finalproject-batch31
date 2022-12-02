@@ -370,7 +370,7 @@ col{
 }
 
 /* Responsive handphone */
-@media (min-width: 375px) and (max-width: 576px) {
+@media (min-width: 325px) and (max-width: 576px) {
     .logo a {
         display: inline;
         font-size: 30px;
